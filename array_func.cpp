@@ -24,6 +24,16 @@ int del(int A[],int index, int length){
     display(A,length);
 }
 
+int max(int A[],int length){
+    int max= A[0];
+    for(int i =0; i<length;i++){
+        if (A[i]>max){
+            max=A[i];
+        }
+    }
+    cout<<"maximum element is :"<<max;
+}
+
 
 int main(){
     int B[6]={1,2,4,5};
@@ -34,4 +44,7 @@ int main(){
     cout<<endl;
     cout<<"deleting an elemnet "<<endl;
     del(B,1,6);
+    cout<<endl;
+    max(B,6);
+
 }
